@@ -1,0 +1,652 @@
+/*BACKEND*/
+#nsbookingagendalinkpremium {
+	color: #d54e21;
+	font-weight: bold;
+}
+.ns-selected-booking-prod-info{
+    height: auto;
+    margin: auto;
+}
+.ns-booking-table-margin{
+    margin-top: 30px;
+}
+.ns-booking-table-border{
+    border-top: 1px solid #ddd;
+}
+.ns-booking-table th, td{
+    padding: 5px;
+    margin: 15px;
+}
+.ns-booking-table input, select{
+    padding: 3px 8px;
+    line-height: 100%;
+    height: 1.7em;
+    width: 100%;
+    outline: 0;
+    margin: 0 0 3px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.ns-inner-prod-info{
+    /*border: 1px solid #ddd;*/
+    height: 350px;
+}
+.ns-inner-prod-info img{
+    max-width: 120px;
+    max-height: 120px;
+    float: left;
+}
+.ns-inner-prod-info .ns-booking-table{
+    text-align: left;
+}
+#ns-text-info-prod{
+    width: 390px;
+    height: inherit;
+    margin-left: 120px;
+    text-align: left;
+    padding-left: 10px;
+}
+.ns-text-info-prod-div-marg{
+    margin: 15px;
+    float: left;
+}
+.ns-text-info-prod-div-marg div{
+    width: 110px;
+    float: left;
+}
+#ns-text-info-prod label{
+    font-weight: bold;
+}
+#ns-text-info-prod span{
+    vertical-align: middle;
+}
+
+#ns-backend-custom-hour-table td{
+	vertical-align: middle;
+}
+
+.ns_booking_week_hour_start th{
+	padding: 0px;
+}
+/*CALENDAR*/
+/*******************************Calendar Template Page**********************************/
+.ns-template-calendar-page-container{
+    padding: 20px;
+    box-sizing: border-box;
+    /* display: table-cell; */
+}
+.ui-datepicker-calendar {
+	background-color: #fff;
+}
+/*******************************Calendar Top Navigation*********************************/
+div#calendar{
+  padding:0px;
+  float: left;
+  width: 70%;
+  font-family:Helvetica, "Times New Roman", Times, serif;
+}
+
+@media screen and (max-width: 800px) {
+	div #calendar{
+	  padding:0px;
+	  float: left;
+	  width: 100%;
+	  font-family:Helvetica, "Times New Roman", Times, serif;
+	}
+}
+ 
+div#calendar div.box{
+    position:relative;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:40px;
+    background-color: #d8adad;      /*<---#787878 */
+}
+ 
+div#calendar div.header{
+    line-height:40px;  
+    vertical-align:middle;
+    position:absolute;
+    top:0px;
+    width: 100%;          /*<------582px*/
+    height:40px;   
+    text-align:center;
+}
+ 
+div#calendar div.header a.ns-agenda-prev,div#calendar div.header a.ns-agenda-next{ 
+    position:absolute;
+    top:0px;   
+    height: inherit;
+    display:block;
+    cursor:pointer;
+    text-decoration:none;
+    color:#FFF;
+	width: 70px;
+    padding-top: inherit;
+}
+ 
+div#calendar div.header span.title{
+    color:#FFF;
+    font-size:18px;
+}
+ 
+ 
+div#calendar div.header a.ns-agenda-prev{
+    left:0px;
+}
+ 
+div#calendar div.header a.ns-agenda-next{
+    right:0px;
+}
+ 
+ 
+ 
+ 
+/*******************************Calendar Content Cells*********************************/
+div#calendar div.box-content{
+    border:1px solid #e3e3e3;
+    border-top:none;
+    min-width: 100%;
+}
+ 
+ 
+ 
+div#calendar ul.label{
+    float:left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-top:5px;
+    margin-left: 5px;
+}
+ 
+div#calendar ul.label li{
+    margin:0.6%;
+    padding:0px;
+    /*margin-right:5px;*/  
+    float:left;
+    list-style-type:none;
+    width:13%;      /*<-----*/
+    height:40px;
+    line-height:40px;
+    vertical-align:middle;
+    text-align:center;
+    color:#000;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 1092px) {
+div#calendar ul.label li{
+		width:13%; 
+	}
+}
+ 
+ 
+div#calendar ul.dates{
+    /*float:left;*/
+    margin: 0px;
+    padding: 0px;
+    /*margin-left: 5px;
+    margin-bottom: 5px;*/
+}
+ 
+/** overall width = width+padding-right**/
+div#calendar ul.dates li{
+    margin:0.6%;
+    padding:0px;
+    /*margin-right:5px;
+    margin-top: 5px;
+    /*line-height:80px;*/
+    vertical-align:middle;
+    float:left;
+    list-style-type:none;
+    width:13%;              /*<------ 80px*/
+    height: 95px;               /*<------ 80px*/
+    font-size:9px;              
+    background-color: #f1f1f1;
+    color:#000;
+    text-align:center; 
+    border: 1px solid #e3e3e3;  /*<------*/
+    border-radius: 3px;
+	overflow-y: hidden;
+}
+
+@media screen and (max-width: 800px) {
+	div#calendar ul.dates li{
+		height: auto;
+		width:15%; 
+	}
+}
+
+@media screen and (max-width: 1092px) {
+	div#calendar ul.dates li{
+		width:13%; 
+	}
+}
+
+
+
+.ns-dates-inner-container{
+	height: 170px;
+}
+
+.ns-calendar-empty-cell{
+	background-color: #B15959 !important;
+}
+
+.ns-calendar-empty-cell-hourly{
+	background-color: #add8d8 !important;
+}
+
+.ns-calendar-some-available-cell{
+	background-color: #FFEECC !important;
+}
+
+.ns-calendar-weekly-cell{
+	width: 600px !important;   
+	float: right !important;
+	height: 150px !important;
+}
+ 
+.ns-weekly-labels{	 
+	height: inherit;
+	width: 25px;
+	float: left;
+ }
+ 
+.ns-weekly-labels li{	
+	width: auto !important;
+	height: auto !important;
+} 
+ 
+:focus{
+    outline:none;
+}
+ 
+div.clear{
+    clear:both;
+}    
+.ns-li-inner-container{
+    height: inherit;
+}  
+.ns-day-number{
+    margin: 5px;
+	font-weight: bold;
+	font-size: 11px;
+	font-style: oblique;
+}
+.ns-booking-event-div{
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 5px;
+    /*background-color: #add8d8;*/
+    border-radius: 3px;
+}
+
+.ns-booking-event-avaiability-div{
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 5px;
+    border-radius: 3px;
+	max-width: inherit;
+	overflow-x: hidden;
+}
+/*******************************Calendar Booking Form*********************************/
+.ns-booking-calendar-form{
+    width: 26%;
+    float: left;
+    margin-left: 30px;
+    background: #d8adad;
+    margin-right: 0px;
+}
+
+
+
+.ns-booking-calendar-form h3{
+    color: #fff;
+    margin: 0px;
+    padding: 5px 20px 5px 20px;
+    font-size: 20px;
+}
+
+.ns-agenda-calendar-legend-container{
+	width: 26%;
+	height: auto;
+    float: left;
+	margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 0px;
+	border: 1px solid #e3e3e3;
+    /*padding: 20px;*/
+    background-color: #f1f1f1;
+}
+
+.ns-agenda-calendar-legend-inner{
+	padding-left: 20px;
+}
+
+.ns-agenda-outer-box-legend{
+	vertical-align: middle;
+}
+
+.ns-agenda-legend-box{
+	width: 20px;
+	height: 20px;
+	margin-top: 10px;
+	display: inline-block;
+	border-radius: 3px;
+	border: 1px solid #e3e3e3;
+}
+
+.ns-agenda-outer-box-legend span{
+	margin-left: 10px;
+}
+
+.ns-agenda-all-available-legend{
+	background-color: #add8d8;
+}
+
+.ns-agenda-some-available-legend{
+	background-color: #FFEECC;
+}
+
+.ns-agenda-not-available-legend{
+	background-color: #B15959;
+}
+
+
+@media screen and (max-width: 800px) {
+	.ns-booking-calendar-form{
+		width: 100%;
+		float: left;
+		margin-left: 0px;
+		background: #d8adad;
+		margin-right: 0px;
+		margin-top: 20px;
+	}
+	
+	.ns-agenda-calendar-legend-container{
+		width: 100%;
+		margin-left: 0px;
+	}
+}
+.ns-inner-booking-calendar-form{
+    border: 1px solid #e3e3e3;
+    padding: 20px;
+    background-color: #f1f1f1
+}
+.ns-inner-booking-calendar-form .ns-border-radius{
+    border-radius: 3px;
+}
+.ns-inner-booking-calendar-form .ns-form-group input, select{
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 0 .75em;
+    height: 2.507em;
+    font-size: .97em;
+    max-width: 100%;
+    width: 100%;
+    vertical-align: middle;
+    background-color: #fff;
+    color: #333;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    transition: color .3s, border .3s, background .3s, opacity .3s;
+    margin-bottom: 10px !important;
+}
+.ns-border-top{
+    margin-top: 10px;
+    border-top: 1px solid #e3e3e3;
+}
+.ns-btn-front{
+    background: #add8d8;
+    color: #fff;
+	box-shadow: unset;
+	border: unset;
+	text-transform: uppercase;
+}
+.ns-btn-front:hover{
+    background: #9dcccc;
+}
+
+.ns-btn-front-alert{
+    background: #B15959;
+    color: #fff;
+	box-shadow: unset;
+	border: unset;
+	text-transform: uppercase;
+}
+
+.ns-btn-front-alert:hover{
+	background: #9c4c49;
+}
+
+/***************************Form Notification Modal*********************************/
+
+.ns-agenda-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 9999; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.ns-agenda-modal-content {
+    	background-color: white;
+		font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		width: 50%;
+		padding: 25px;
+		border-radius: 5px;
+		text-align: center;
+		position: fixed;
+		left: 25%;
+		top: 25%;
+		overflow: hidden;
+		z-index: 99999; 
+}
+
+.ns-img-container-booking-modal{
+	height: 80px;
+	width: 80px;
+	margin: auto;
+	animation-name: ns-bounceIn;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes ns-bounceIn{
+  0%{
+    opacity: 0;
+    transform: scale(0.3) translate3d(0,0,0);
+  }
+  50%{
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(0.89);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1) translate3d(0,0,0);
+  }
+}
+
+.ns-display-none{
+	display: none;
+}
+
+.ns-button-dialog-field{
+	margin: auto;
+	margin-top: 50px;
+	float: left;
+	width: 100%;
+}
+
+.ns-button-dialog-field div{
+	width: 100%;
+	float: left;
+}
+
+.ns-button-dialog-field h4{
+	font-weight: bold;
+	width: 100%;
+	float:left;
+}
+
+.ns-agenda-modal-open{
+	overflow: hidden;
+}
+
+/***************************Days Modal*********************************/
+#ns-modal-agenda-calendar-products{
+	text-align: left;
+}
+
+.ns-modal-agenda {
+    display: none; 
+    position: fixed; 
+    z-index: 9999; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.ns-agenda-day-modal-content {
+	background-color: white;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	width: 80%;
+	padding: 25px;
+	border-radius: 5px;
+	text-align: center;
+	position: fixed;
+	top: 20%;
+	left: 10%;
+	/*display: none;*/
+	z-index: 99999; 
+}
+
+.ns-modal-agenda-calendar-products-container{
+	overflow-y: auto;
+	max-height: 400px;
+}
+
+.ns-open-modal{
+	cursor: pointer;
+}
+
+/*******************single booking*********************/
+#main {
+	min-height: 400px;
+}
+
+#ns-single-booking-container {
+    float: left;
+    margin-right: 5%;
+    padding: 5% 7%;
+	width: 100%;
+	height: auto;
+
+}
+
+#ns-single-booking-container label {
+	display: inline;
+}
+
+/*Contact Form*/
+#ns-contact-form{
+	width: 70%;
+}
+
+#ns_cancelled_booking_email{
+	padding: 3px 8px;
+	width: 25%;
+	outline: 0;
+	margin: 0 0 3px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+/*Tooltip*/
+.ns-tooltip {
+    position: relative;
+    display: inline-block;
+	color: #777;
+	font-size: 12px;
+	font-weight: bold;
+    /*border-bottom: 1px dotted black;*/
+}
+
+.ns-tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.ns-tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 15%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+#ns-tooltip-hour-daily-table{
+	margin-left: -30px;
+}
+
+.ns-tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ns-agenda-loader {
+  display: none;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #9dcccc;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: ns-agenda-spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes ns-agenda-spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes ns-agenda-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
